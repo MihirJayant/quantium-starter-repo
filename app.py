@@ -12,10 +12,11 @@ app.layout = html.Div(
     className="container",
     children=[
 
-        html.H1(
-            "📈 Soul Foods Pink Morsel Sales Analysis",
-            className="title"
-        ),
+html.H1(
+    "📈 Soul Foods Pink Morsel Sales Analysis",
+    id="header",
+    className="title"
+),
 
         html.P(
             "Explore Pink Morsel sales trends before and after the January 2021 price increase.",
@@ -143,7 +144,5 @@ def update_graph(selected_region):
     )
 
     return fig
-
-
 if __name__ == "__main__":
     app.run(debug=True)
